@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SciInnovate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #080808; }
+    ::selection { background: #C4922A; color: #080808; }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #080808; }
+    ::-webkit-scrollbar-thumb { background: #C4922A; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    .fade-1 { animation: fadeUp 0.7s ease forwards; }
+    .fade-2 { animation: fadeUp 0.7s 0.15s ease forwards; opacity: 0; }
+    .fade-3 { animation: fadeUp 0.7s 0.3s ease forwards; opacity: 0; }
+    .fade-4 { animation: fadeUp 0.7s 0.45s ease forwards; opacity: 0; }
+
+    .topic-btn { transition: all 0.2s ease; }
+    .topic-btn:hover { border-color: #C4922A !important; color: #C4922A !important; }
+
+    .send-btn { transition: all 0.25s ease; }
+    .send-btn:hover:not(:disabled) { background: #D4A23A !important; transform: translateY(-1px); }
+    .send-btn:active:not(:disabled) { transform: translateY(0); }
+
+    input::placeholder { color: #3A3530; }
+    input:focus { border-bottom-color: #C4922A !important; }
+  </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
