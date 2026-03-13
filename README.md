@@ -1,9 +1,9 @@
-# SciInnovate — Daily Tech & Science Digest
+# SciInnovate
 
-A personalized email digest API with a branded UI. Pick your interests, enter your email, get curated tech and science headlines delivered instantly.
+A personalised email digest API with a branded UI. Pick your interests, enter your email, get curated tech and science headlines delivered instantly.
 
 <p align="center">
-  <img src="screenshots/ui.png" width="700"/>
+  <img src="ui.png" width="700"/>
 </p>
 
 ## What it does
